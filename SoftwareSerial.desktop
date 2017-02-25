@@ -1,0 +1,6 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Lien vers SoftwareSerial
+Type=Link
+URL=https://github.com/arduino/Arduino/tree/master/hardware/arduino/avr/libraries/SoftwareSerial
+Icon=text-html

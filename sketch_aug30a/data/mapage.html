@@ -1,0 +1,22 @@
+<!DOCTYPE html>  
+ <html>  
+ <head>  
+ <meta charset=\"utf-8\" />   
+ <title>Test de transfert de paramètre </title>  
+ <script language="JavaScript">  
+  //-- Appel de la page : demo.html?LED1=ON&CAPTEUR1=1234  
+  function processUser()   
+  { var parameters = location.search.substring(1).split("&"); //-- location.search contient la liste des paramètres (à retirer ? et à éclater selon les '&'  
+   var param1 = parameters[0].split("=");  
+   var param2 = parameters[1].split("=");  
+      alert("1er param : '"+param1[1]+"' 2nd : '"+param2[1]+"'");  
+  }  
+ </script>  
+ <!-- Fin du code Javascript -->   
+ </head>  
+ <body>  
+  <p>  
+  <button onclick="processUser();">Cliquez pour visualiser les parametres...</button>  
+  </p>  
+ </body>  
+ </html>  
